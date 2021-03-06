@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    　
+
+    <TextView
+        android:id="@+id/setting_plan_name"
+        android:hint="予定名"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+         />
+    <TextView
+        android:id="@+id/setting_plan_time"
+        android:hint="時間："
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:layout_marginLeft="118dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/setting_plan_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <TableLayout
+        android:id="@+id/planselection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="@string/action00"
+                android:id="@+id/action_0"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="@string/action01"
+                android:id="@+id/action_1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="@string/action02"
+                android:id="@+id/action_2"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="@string/action03"
+                android:id="@+id/action_3"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="@string/action04"
+                android:id="@+id/action_4"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="@string/action05"
+                android:id="@+id/action_5"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:text="新しい予定を作る"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="時間設定"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/setTime15"
+                android:text="15分"
+                />
+            <Button
+                android:id="@+id/setTime30"
+                android:text="30分"
+                android:layout_marginLeft="13dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <Button
+                android:id="@+id/setTime45"
+                android:text="45分"/>
+            <Button
+                android:id="@+id/setTime60"
+                android:text="60分"
+                android:layout_marginLeft="13dp"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="250dp"
+        android:text="決定"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
